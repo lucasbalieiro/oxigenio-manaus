@@ -17,6 +17,24 @@
             "open_on_weekends": "1",
             "whatsapp":null,
             "cel_formated":"(92) 3618-9394"
+        },
+        {
+            "id": 2,
+            "enabled": true,
+            "lat": "-3.0042238",
+            "lng": "-60.0478753",
+            "name": "Nitron da Amazônia",
+            "description": "No momento não possui cilindro para venda, apenas reabastecimento",
+            "last_update":"16/01/2020 11:00",
+            "address":"Rua Desembargador Cesar do Rego, 897 - Colônia Antonio Aleixo - Manaus/AM",
+            "images": [
+                "http://www.picinguaba.eco.br/images/joomlart/demo/default.jpg"
+            ],
+            "instructions": "A partir da 11 horas a empresa receberá apenas Cilindros grandes, com receituário médico e 1 unidade por pessoa",
+            "opening_hours": "08:00 às 17:30",
+            "open_on_weekends": "1",
+            "whatsapp":null,
+            "cel_formated":"(92) 3615-2322"
         }
     ]
 }

@@ -26,7 +26,7 @@
 
 <body>
   <div id="page-orphanages" style="background-color: #ff6961;">
-    <p  style="background-color: #ff6961; margin: auto;">
+    <p style="background-color: #ff6961; margin: auto;">
       <a class="primary-button" onclick="hidemenu()" type="button" href="#">
         <img src="/images/plus.svg" alt="Menu">
       </a>
@@ -35,8 +35,10 @@
 
       <header>
         <h2>Escolha um local</h2>
-        <p>São mostrados somente os fornecedores que, no momento da atualização, possuiam capacidade de atendimento</p>
-        <p>Entre em contato diretamente comigo</p>
+        <p></p>
+      </header>
+      <footer>
+        <p>Para informar atualizações</p>
         <p>
           <a href="https://api.whatsapp.com/send?l=pt_BR&phone=92981704683&text=Oi Lucas, gostaria de passar uma informação"
             target="_blank" class="primary-button" type="button">
@@ -44,7 +46,7 @@
           </a>
           (92) 98170-4683
         </p>
-      </header>
+      </footer>
     </aside>
 
     <div id="mapid" class="animate-appear"></div>
@@ -52,8 +54,10 @@
 
     <div class="orphanages">
       {{#each locais}}
+      {{#if this.enabled}}
       <span hidden data-id="{{this.id}}" data-name="{{this.name}}" data-lat="{{this.lat}}"
         data-lng="{{this.lng}}"></span>
+      {{/if}}
 
       {{/each}}
     </div>
