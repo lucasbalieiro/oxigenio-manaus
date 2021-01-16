@@ -20,14 +20,22 @@
   <link rel="stylesheet" href="/css/animations.css" />
   <link rel="stylesheet" href="/css/page-orphanages.css" />
 
+
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-  <div id="page-orphanages">
-    <aside class="animate-right">
+  <div id="page-orphanages" style="background-color: #ff6961;">
+    <p  style="background-color: #ff6961; margin: auto;">
+      <a class="primary-button" onclick="hidemenu()" type="button" href="#">
+        <img src="/images/plus.svg" alt="Menu">
+      </a>
+    </p>
+    <aside id="headerItem" class="animate-right">
+
       <header>
-        <h2>Escolha um local no mapa</h2>
+        <h2>Escolha um local</h2>
+        <p>São mostrados somente os fornecedores que, no momento da atualização, possuiam capacidade de atendimento</p>
         <p>Se você for um revendedor, e seu estabelecimento estiver desatualizado ou não cadastrado </p>
         <p>Entre em contato diretamente comigo</p>
         <p>
@@ -38,11 +46,6 @@
           (92) 98170-4683
         </p>
       </header>
-
-      <footer>
-        <strong>Manaus</strong>
-        <p>Amazonas</p>
-      </footer>
     </aside>
 
     <div id="mapid" class="animate-appear"></div>
@@ -65,6 +68,16 @@
   </div>
 
   <script src="/scripts/page-orphanages.js"></script>
+  <script>
+    function hidemenu() {
+      var x = document.getElementById("headerItem");
+      if (x.style.display === "none") {
+        x.style.display = "flex";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
 
 </body>
 

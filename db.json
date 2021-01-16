@@ -2,16 +2,17 @@
     "locais": [
         {
             "id": 1,
+            "enabled": true,
             "lat": "-3.1162796",
             "lng": "-59.9096087",
             "name": "Carboxi Gases",
             "description": "No momento não possui cilindro para venda, apenas reabastecimento",
-            "last_update":"16/01/2020 14:29",
+            "last_update":"16/01/2020 15:37",
             "address":"Rua Desembargador Cesar do Rego, 897 - Colônia Antonio Aleixo - Manaus/AM",
             "images": [
                 "http://www.picinguaba.eco.br/images/joomlart/demo/default.jpg"
             ],
-            "instructions": "No momento a empresa está fazendo uma lista de espera para recebimento do oxigenio dos que se encontram no local. Estão aceitando pagamentos em espécie ou PIX. Mas, é preciso confirmar em lista de espera no local",
+            "instructions": "No momento a empresa está com uma grande fila de espera para recebimento do oxigenio dos que se encontram no local. Estão aceitando pagamentos em espécie ou PIX.",
             "opening_hours": "Horário de visitas Das 18h até 8h",
             "open_on_weekends": "1",
             "whatsapp":null,
