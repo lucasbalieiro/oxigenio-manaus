@@ -55,7 +55,7 @@
         <div class="orphanage-details-content">
           <h1>{{local.name}}</h1>
 
-          <p>{{local.about}}</p>
+          <p>{{local.description}}</p>
 
           <div class="map-container">
             <div id="mapid"></div>
@@ -66,6 +66,7 @@
             </footer>
           </div>
           <p>Endereço:{{local.address}}</p>
+          <p>Ultima Atualização: {{local.last_update}}</p>
 
           <hr />
 
@@ -92,12 +93,14 @@
             </div>
             {{/if}}
           </div>
-
-          <a href="https://api.whatsapp.com/send?l=pt_BR&phone={{local.whatsapp}}&text=Oi, {{local.name}}" target="_blank"
-            class="primary-button" type="button">
+          {{#if local.whatsapp}}
+          <a href="https://api.whatsapp.com/send?l=pt_BR&phone={{local.whatsapp}}&text=Oi, {{local.name}}"
+            target="_blank" class="primary-button" type="button">
             <img src="/images/whatsapp.svg" alt="Chamar no whatsapp" />
             Entrar em contato
           </a>
+          {{/if}}
+          <p>Telefone: {{local.cel_formated}}</p>
         </div>
       </div>
     </main>
