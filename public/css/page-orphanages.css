@@ -10,7 +10,7 @@ aside {
     background: linear-gradient(329.54deg, #ff6961 0%, #fa655d 100%);
     padding: clamp(3rem, 5vw, 8rem);
 
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
 }
