@@ -20,13 +20,13 @@
         },
         {
             "id": 2,
-            "enabled": true,
+            "enabled": false,
             "lat": "-3.0042238",
             "lng": "-60.0478753",
             "name": "Nitron da Amazônia",
             "description": "No momento não possui cilindro para venda, apenas reabastecimento",
             "last_update":"16/01/2020 11:00",
-            "address":"Rua Desembargador Cesar do Rego, 897 - Colônia Antonio Aleixo - Manaus/AM",
+            "address":"Av contorno norte sul 1513 (9,62 km) 69073-000 Manaus, AM",
             "images": [
                 "http://www.picinguaba.eco.br/images/joomlart/demo/default.jpg"
             ],
@@ -34,7 +34,7 @@
             "opening_hours": "08:00 às 17:30",
             "open_on_weekends": "1",
             "whatsapp":null,
-            "cel_formated":"(92) 3615-2322"
+            "cel_formated":"(92) 3615-2299"
         }
     ]
 }
