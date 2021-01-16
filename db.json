@@ -35,6 +35,24 @@
             "open_on_weekends": "1",
             "whatsapp":null,
             "cel_formated":"(92) 3615-2299"
+        },
+        {
+            "id": 3,
+            "enabled": true,
+            "lat": "-3.115671",
+            "lng": "-60.017606",
+            "name": "Nogueira e Menezes LTDA",
+            "description": "Venda de Material para acoplar ao cilindro. Estoque hoje está esgotado, previsão de chegada entre 19 e 20 de janeiro",
+            "last_update":"16/01/2020 18:54",
+            "address":"Endereço de entrega pode variar, realize todos os tramites via ligação",
+            "images": [
+                "http://www.picinguaba.eco.br/images/joomlart/demo/default.jpg"
+            ],
+            "instructions": "O atendimento é todo via telefone, após acertarem os trâmites, eles enviam a localização",
+            "opening_hours": "08:00 às 17:30",
+            "open_on_weekends": "1",
+            "whatsapp":"5592988162656",
+            "cel_formated":"(92) 9816-2656"
         }
     ]
 }
