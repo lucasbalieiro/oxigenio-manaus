@@ -7,7 +7,7 @@ const options = {
 }
 
 // create map
-const map = L.map('mapid', options).setView([-27.222633,-49.6455874], 15)
+const map = L.map('mapid', options).setView([-3.0743458,-60.0404067], 15)
 
 // create and add tileLayer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -19,7 +19,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 
 // create icon
 const icon = L.icon({
-    iconUrl: "/images/map-marker.svg",
+    iconUrl: "/images/oxygen-tank.svg",
     iconSize: [58, 68],
     iconAnchor: [29, 68],
     popupAnchor: [170, 2]
@@ -28,7 +28,7 @@ const icon = L.icon({
 
 // create and add marker
 L
-.marker([-27.222633,-49.6455874], { icon })
+.marker([-3.0743458,-60.0404067], { icon })
 .addTo(map)
 
 
