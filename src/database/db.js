@@ -1,20 +1,7 @@
-const Database = require('sqlite-async');
+const low = require('lowdb')
+const FileSync = require('lowdb/adapters/FileSync')
 
-function execute(db) {
-    return db.exec(`
-        CREATE TABLE IF NOT EXISTS orphanages (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            lat TEXT,
-            lng TEXT,
-            name TEXT,
-            about TEXT,
-            whatsapp TEXT,
-            images TEXT,
-            instructions TEXT,
-            opening_hours TEXT,
-            open_on_weekends TEXT
-        );
-    `)
-}
+const adapter = new FileSync('./db.json');
+const db = low(adapter);
 
-module.exports = Database.open(__dirname + '/database.sqlite').then(execute)
+module.exports = db;

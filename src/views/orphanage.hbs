@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ orphanage.name }} | Oxigenio Manaus</title>
+  <title>{{ local.name }} | Oxigenio Manaus</title>
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -41,45 +41,46 @@
 
     <main class="animate-appear with-sidebar">
       <div class="orphanage-details">
-        <img src="{{orphanage.firstImage}}" alt="{{orphanage.name}}" />
+        <img src="{{local.firstImage}}" alt="{{local.name}}" />
 
         <div class="images">
-          {{#each orphanage.images }}
+          {{#each local.images }}
           <button onclick="selectImage(event)" class="active" type="button">
-            <img src="{{this}}" alt="{{orphanage.name}}" />
+            <img src="{{this}}" alt="{{local.name}}" />
           </button>
           {{/each}}
 
         </div>
 
         <div class="orphanage-details-content">
-          <h1>{{orphanage.name}}</h1>
+          <h1>{{local.name}}</h1>
 
-          <p>{{orphanage.about}}</p>
+          <p>{{local.about}}</p>
 
           <div class="map-container">
             <div id="mapid"></div>
-            <span data-lat="{{orphanage.lat}}" data-lng="{{orphanage.lng}}"></span>
+            <span data-lat="{{local.lat}}" data-lng="{{local.lng}}"></span>
             <footer>
-              <a target="_blank" href="https://maps.google.com/mobile?q={{orphanage.lat}},{{orphanage.lng}}&z=15">Ver
+              <a target="_blank" href="https://maps.google.com/mobile?q={{local.lat}},{{local.lng}}&z=15">Ver
                 rotas no Google Maps</a>
             </footer>
           </div>
+          <p>Endereço:{{local.address}}</p>
 
           <hr />
 
           <h2>Instruções para compra</h2>
 
-          <p>{{orphanage.instructions}}
+          <p>{{local.instructions}}
           </p>
 
           <div class="open-details">
             <div class="hour">
               <img src="/images/clock.svg" alt="Horários" />
-              {{orphanage.opening_hours}}
+              {{local.opening_hours}}
             </div>
 
-            {{#if orphanage.open_on_weekends}}
+            {{#if local.open_on_weekends}}
             <div class="open-on-weekends open">
               <img src="/images/info.svg" alt="Informaçao" />
               Atendemos fim de semana
@@ -92,7 +93,7 @@
             {{/if}}
           </div>
 
-          <a href="https://api.whatsapp.com/send?l=pt_BR&phone={{orphanage.whatsapp}}&text=Oi, quero conversar sobre visitas no {{orphanage.name}}" target="_blank"
+          <a href="https://api.whatsapp.com/send?l=pt_BR&phone={{local.whatsapp}}&text=Oi, {{local.name}}" target="_blank"
             class="primary-button" type="button">
             <img src="/images/whatsapp.svg" alt="Chamar no whatsapp" />
             Entrar em contato

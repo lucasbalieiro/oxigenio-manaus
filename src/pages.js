@@ -10,22 +10,21 @@ module.exports = {
     const id = req.query.id;
 
     try {
-      const db = await Database;
-      const results = await db.all(
-        `SELECT * FROM orphanages WHERE id = "${id}"`
-      );
-      const orphanage = results[0];
+      const local = await Database
+        .get('locais')
+        .find({ 'id': parseInt(id) })
+        .value();
 
-      orphanage.images = orphanage.images.split(",");
-      orphanage.firstImage = orphanage.images[0];
+      local.images = local.images;
+      local.firstImage = local.images[0];
 
-      if (orphanage.open_on_weekends == "0") {
-        orphanage.open_on_weekends = false;
+      if (local.open_on_weekends == "0") {
+        local.open_on_weekends = false;
       } else {
-        orphanage.open_on_weekends = true;
+        local.open_on_weekends = true;
       }
 
-      return res.render("orphanage", { orphanage });
+      return res.render("orphanage", { local });
     } catch (error) {
       console.log(error);
       return res.send("Erro no banco de dados!");
@@ -34,9 +33,12 @@ module.exports = {
 
   async locals(req, res) {
     try {
-      const db = await Database;
-      const orphanages = await db.all("SELECT * FROM orphanages");
-      return res.render("orphanages", { orphanages });
+      const locais = Database
+        .get('locais')
+        .value();
+
+      return res.render("orphanages", { locais });
+
     } catch (error) {
       console.log(error);
       return res.send("Erro no banco de dados!");
