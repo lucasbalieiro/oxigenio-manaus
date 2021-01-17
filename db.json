@@ -57,17 +57,17 @@
         {
             "id": 4,
             "enabled": true,
-            "lat": "-3.1458433",
-            "lng": "-59.9956522",
+            "lat": "-3.1466491",
+            "lng": "-60.0150206",
             "name": "Operação da Casa Civil",
-            "last_update":"16/01/2020 20:36",
-            "description": "Casa Civil recolhendo cilindros para abastecimento gratuito em Bélem! Link da reportagem:https://www.facebook.com/PortalCM7noticiasmanaus/videos/989714801558303/",
-            "address":"SPA - Colônia Antonio Aleixo - Av. Getúlio Vargas - Colônia Antônio Aleixo, Manaus",
+            "last_update":"16/01/2020 22:54",
+            "description": "Casa Civil recolhendo cilindros no SPA Zona para abastecimento gratuito em Bélem. A previsão de retorno com os cilindros cheios é as 06h",
+            "address":"SPA - Zona Sul - R. José Bento, 33 - Colônia Oliveira Machado",
             "images": [
                 "http://www.picinguaba.eco.br/images/joomlart/demo/default.jpg"
             ],
-            "instructions": "Podem seguir direto para o aeroporto Ponta Pelada. Horario de retorno do voo 6h do 17/01/2020",
-            "opening_hours": "",
+            "instructions": "Levar seus cilindros identificados e anotem o numero de série",
+            "opening_hours": "até 01:30",
             "open_on_weekends": "1",
             "whatsapp":null,
             "cel_formated":""
