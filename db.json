@@ -6,14 +6,14 @@
             "lat": "-3.1162796",
             "lng": "-59.9096087",
             "name": "Carboxi Gases",
-            "description": "R$60,00/m³; Estão atendendo até a fila encerrar. No momento não possui cilindro para venda, apenas reabastecimento",
-            "last_update":"16/01/2020 23:05",
+            "description": "A partir das 12:20 do dia 17/01 a empresa receberá os cilindros identificados; E poderão ser recolhidos novamente a partir das 18:00; R$ 600,00 - Cilindro Grande; R$ 300,00 Cilindros Menores",
+            "last_update":"17/01/2020 15:16",
             "address":"Rua Desembargador Cesar do Rego, 897 - Colônia Antonio Aleixo - Manaus/AM",
             "images": [
                 "http://www.picinguaba.eco.br/images/joomlart/demo/default.jpg"
             ],
-            "instructions": "No momento a empresa está com uma grande fila de espera para recebimento do oxigenio dos que se encontram no local. Estão aceitando pagamentos em espécie ou PIX.",
-            "opening_hours": "Horário de visitas Das 18h até 8h",
+            "instructions": " Estão aceitando pagamentos em espécie ou PIX. Lembre-se de levar comprovante médico e, até o momento, estavam atendendo somente um cilindro por pessoa;",
+            "opening_hours": "Prometem ficar abertos até encerrar a fila",
             "open_on_weekends": "1",
             "whatsapp":null,
             "cel_formated":"(92) 3618-9394"
@@ -56,7 +56,7 @@
         },
         {
             "id": 4,
-            "enabled": true,
+            "enabled": false,
             "lat": "-3.1464028",
             "lng": "-60.0082789",
             "name": "Operação da Casa Civil",
