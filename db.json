@@ -57,11 +57,11 @@
         {
             "id": 4,
             "enabled": true,
-            "lat": "-3.1466491",
-            "lng": "-60.0150206",
+            "lat": "-3.1464028",
+            "lng": "-60.0082789",
             "name": "Operação da Casa Civil",
-            "last_update":"16/01/2020 22:54",
-            "description": "Casa Civil recolhendo cilindros no SPA Zona para abastecimento gratuito em Bélem. A previsão de retorno com os cilindros cheios é as 06h",
+            "last_update":"16/01/2020 23:00",
+            "description": "Casa Civil recolhendo cilindros no SPA Zona Sul para abastecimento gratuito em Bélem. A previsão de retorno com os cilindros cheios é as 06h",
             "address":"SPA - Zona Sul - R. José Bento, 33 - Colônia Oliveira Machado",
             "images": [
                 "http://www.picinguaba.eco.br/images/joomlart/demo/default.jpg"
