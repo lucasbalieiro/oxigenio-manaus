@@ -77,8 +77,8 @@
             "enabled": true,
             "lat": "-3.098257",
             "lng": "-60.026689",
-            "name": "Victor Israel - Parceria Bemol",
-            "last_update":"19/01/2020 15:17",
+            "name": "Respira Amazonas - Parceria Bemol",
+            "last_update":"19/01/2020 15:50",
             "description": "Estão distribuindo gratuitamente, em parceria com a Bemol, basta fazer contato com eles para entrar na lista; Quando estiver pronto eles fazem a entrega;",
             "address":"Eles fazem a entrega, não precisa ir ao local",
             "images": [
@@ -88,7 +88,8 @@
             "opening_hours": "Depende da demanda",
             "open_on_weekends": "1",
             "whatsapp":5592982286779,
-            "cel_formated":"(92) 98228-6779"
+            "cel_formated":"(92) 98228-6779",
+            "cel_formated_2":"(92) 99132-5550"
         }
     ]
 }
