@@ -6,13 +6,13 @@
             "lat": "-3.1162796",
             "lng": "-59.9096087",
             "name": "Carboxi Gases",
-            "description": "A empresa informou que está com um problema na ferramental e está trabalhando para corrigir nas próximas horas",
+            "description": "A empresa já corrigiu o problema de funcionamento e está funcionando para reabastecimento.",
             "last_update":"18/01/2020 14:08",
             "address":"Rua Desembargador Cesar do Rego, 897 - Colônia Antonio Aleixo - Manaus/AM",
             "images": [
                 "http://www.picinguaba.eco.br/images/joomlart/demo/default.jpg"
             ],
-            "instructions": "No momento, sem disponibilidade",
+            "instructions": "Deve-se apresentar documento que comprove a situação do doente; apenas 1 unidade por pessoa; Pgamentos em espécie ou PIX",
             "opening_hours": "-",
             "open_on_weekends": "1",
             "whatsapp":null,
