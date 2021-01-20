@@ -5,7 +5,7 @@ module.exports = {
     return res.render("index");
   },
 
-  async orphanage(req, res) {
+  async local(req, res) {
     const id = req.query.id;
 
     try {
@@ -14,16 +14,13 @@ module.exports = {
         .find({ 'id': parseInt(id) })
         .value();
 
-      local.images = local.images;
-      local.firstImage = local.images[0];
-
       if (local.open_on_weekends == "0") {
         local.open_on_weekends = false;
       } else {
         local.open_on_weekends = true;
       }
 
-      return res.render("orphanage", { local });
+      return res.render("local", { local });
     } catch (error) {
       console.log(error);
       return res.send("Erro no banco de dados!");

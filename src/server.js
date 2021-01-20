@@ -18,7 +18,7 @@ server
 
     // rotas da aplicaçao
     .get('/', pages.index)
-    .get('/local', pages.orphanage)
+    .get('/local', pages.local)
     .get('/locais', pages.locals)
 
 //ligar o servidor
