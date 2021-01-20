@@ -18,41 +18,29 @@
 
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="stylesheet" href="/css/animations.css" />
-  <link rel="stylesheet" href="/css/page-orphanages.css" />
+  <link rel="stylesheet" href="/css/page-locals.css" />
 
 
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-  <div id="page-orphanages" style="background-color: #ff6961;">
-    <p style="background-color: #ff6961; margin: auto;">
-      <a class="primary-button" onclick="hidemenu()" type="button" href="#">
-        <img src="/images/plus.svg" alt="Menu">
+  <div id="page-locals" style="background-color: #ff6961;">
+    
+    <div class="navbar" id="navbar">
+      <a href="/" class="active">
+        <img src="/images/arrow-back.svg" alt="Voltar">
       </a>
-    </p>
-    <aside id="headerItem" class="animate-right">
-
-      <header>
-        <h2>Escolha um local</h2>
-        <p>Exibindo apenas locais com estoque confirmado</p>
-      </header>
-      <footer>
-        <p>Para informar atualizações</p>
-        <p>
-          <a href="https://api.whatsapp.com/send?l=pt_BR&phone=92981704683&text=Oi Lucas, gostaria de passar uma informação"
-            target="_blank" class="primary-button" type="button">
-            <img src="/images/whatsapp.svg" alt="Chamar no whatsapp" />
-          </a>
-          (92) 98170-4683
-        </p>
-      </footer>
-    </aside>
+      <a href="#">Locais</a>
+      <a href="#">Médicos</a>
+      <a href="#">Equipamentos</a>
+      <a href="#">Info</a>
+      <a href="javascript:void(0);" class="icon" onclick="menuToggler()">&#9776;</a>
+    </div>
 
     <div id="mapid" class="animate-appear"></div>
 
-
-    <div class="orphanages">
+    <div class="locals">
       {{#each locais}}
       {{#if this.enabled}}
       <span hidden data-id="{{this.id}}" data-name="{{this.name}}" data-lat="{{this.lat}}"
@@ -61,25 +49,20 @@
 
       {{/each}}
     </div>
-
-
-    <!--
-    <a href="/create-orphanage" class="create-orphanage" title="Cadastre um orfanato">
-      <img src="/images/plus.svg" alt="Criar orfanato" />
-    </a>
-    -->
   </div>
 
   <script src="/scripts/page-orphanages.js"></script>
+
   <script>
-    function hidemenu() {
-      var x = document.getElementById("headerItem");
-      if (x.style.display === "none") {
-        x.style.display = "flex";
+    function menuToggler() {
+      var x = document.getElementById("navbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
       } else {
-        x.style.display = "none";
+        x.className = "navbar";
       }
     }
+
   </script>
 
 </body>
