@@ -58,7 +58,7 @@
         },
         {
             "id": 5,
-            "enabled": true,
+            "enabled": false,
             "lat": "-3.098257",
             "lng": "-60.026689",
             "name": "Respira Amazonas - Parceria Bemol",
