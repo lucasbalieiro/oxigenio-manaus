@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="stylesheet" href="/css/animations.css" />
   <link rel="stylesheet" href="/css/navbar.css" />
-  <link rel="stylesheet" href="/css/map.css" />
+  <link rel="stylesheet" href="/css/modal.css">
   <link rel="stylesheet" href="/css/buttons.css" />
   <link rel="stylesheet" href="/css/page-local.css" />
 
@@ -28,15 +28,7 @@
 <body>
   <div id="page-local">
 
-    <div class="navbar" id="navbar">
-      <a href="/locais" class="active">
-        <img src="/images/arrow-back.svg" alt="Voltar">
-      </a>
-      <a href="/locais">Locais</a>
-      <a href="#">Médicos</a>
-      <a href="#">Info</a>
-      <a href="javascript:void(0);" class="icon" onclick="menuToggler()">&#9776;</a>
-    </div>
+    {{>navbar}}
 
     <main class="animate-appear">
       <div class="orphanage-details">
@@ -65,25 +57,19 @@
           <p>
             Cel:
             {{#each local.cel_formated}}
-             {{this}};
+            {{this}};
             {{/each}}
           </p>
         </div>
       </div>
     </main>
   </div>
-  <script src="/scripts/page-orphanage.js"></script>
 
-  <script>
-    function menuToggler() {
-      var x = document.getElementById("navbar");
-      if (x.className === "navbar") {
-        x.className += " responsive";
-      } else {
-        x.className = "navbar";
-      }
-    }
-  </script>
+  {{>info}}
+  {{>infoMedico}}
+
+  <script src="/scripts/global.js"></script>
+  <script src="/scripts/page-local.js"></script>
 
 </body>
 

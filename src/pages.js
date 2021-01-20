@@ -13,14 +13,8 @@ module.exports = {
         .get('locais')
         .find({ 'id': parseInt(id) })
         .value();
-
-      if (local.open_on_weekends == "0") {
-        local.open_on_weekends = false;
-      } else {
-        local.open_on_weekends = true;
-      }
-
       return res.render("local", { local });
+
     } catch (error) {
       console.log(error);
       return res.send("Erro no banco de dados!");

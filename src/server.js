@@ -2,24 +2,21 @@
 const express = require('express');
 const path = require('path');
 const pages = require('./pages.js');
+const hbs = require('hbs');
 
+hbs.registerPartials(path.join(__dirname, "views", "partials"));
 // iniciando o express
 const server = express()
 server
-    // utilizar body do req
     .use(express.urlencoded({ extended: true }))
 
-    // utilizando os arquivos estáticos
     .use(express.static('public'))
 
-    // configurar template engine
     .set('views', path.join(__dirname, "views"))
     .set('view engine', 'hbs')
 
-    // rotas da aplicaçao
     .get('/', pages.index)
     .get('/local', pages.local)
     .get('/locais', pages.locals)
 
-//ligar o servidor
 server.listen(process.env.PORT || 5500)
