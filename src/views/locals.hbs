@@ -29,15 +29,7 @@
 <body>
   <div id="page-locals" style="background-color: #ff6961;">
 
-    <div class="navbar" id="navbar">
-      <a href="/" class="active">
-        <img src="/images/arrow-back.svg" alt="Voltar">
-      </a>
-      <a href="#" class="active">Locais</a>
-      <a href="#">Médicos</a>
-      <a href="#" id="infoBtn">Info</a>
-      <a href="javascript:void(0);" class="icon" onclick="menuToggler()">&#9776;</a>
-    </div>
+    {{>navbar}}
 
     <div id="mapid" class="animate-appear"></div>
 
@@ -52,78 +44,10 @@
     </div>
   </div>
 
-  <div id="aboutMeModal" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-      <div class="modal-header">
-        <span class="close">&times;</span>
-        <h3>Sobre Mim</h3>
-      </div>
-      <div class="modal-body">
-        <p>
-          <img src="/images/me.jpeg" alt="Foto do Lucas">
-          Olá, eu me chamo Lucas Balieiro
-        </p>
-
-        <p>Todas as informações nesse site passam por um processo de triagem para saber se os fornecedores ainda possuem
-          estoque</p>
-
-        <p>E tento deixar essa plataforma o mais atualizada possível</p>
-        <p>Se você tiver alguma informação que seja relevante não deixe de entrar em contato</p>
-        <p>
-          <a href="https://www.instagram.com/luska.balieiro/"> <img class="icon" alt="Instagram"
-              src="/images/instagram.svg">
-          </a>
-
-          <a href="https://api.whatsapp.com/send?l=pt_BR&phone=5592981704683&text=Oi, Lucas" target="_blank">
-            <img style="background-color: #3cdc8c;" src="/images/whatsapp.svg" class="icon" alt="WhatsApp" />
-          </a>
-
-          <a href="https://www.linkedin.com/in/lucasbalieiro/"> <img class="icon" alt="LinkedIn"
-              src="/images/linkedin.svg">
-          </a>
-        </p>
-      </div>
-    </div>
-
-  </div>
-
-  <script src="/scripts/page-orphanages.js"></script>
-
-  <script>
-    function menuToggler() {
-      var x = document.getElementById("navbar");
-      if (x.className === "navbar") {
-        x.className += " responsive";
-      } else {
-        x.className = "navbar";
-      }
-    }
-  </script>
-
-  <script>
-
-    var modal = document.getElementById("aboutMeModal");
-    var btn = document.getElementById("infoBtn");
-
-    var span = document.getElementsByClassName("close")[0];
-
-    btn.onclick = function () {
-      modal.style.display = "block";
-    }
-
-    span.onclick = function () {
-      modal.style.display = "none";
-    }
-
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-  </script>
-
+  {{>info}}
+  {{>infoMedico}}
+  <script src="/scripts/global.js"></script>
+  <script src="/scripts/page-locals.js"></script>
 </body>
 
 </html>
