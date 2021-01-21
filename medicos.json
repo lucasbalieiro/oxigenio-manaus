@@ -3,8 +3,14 @@
         {
             "name":"Projeto Lizla",
             "area":"Voluntários",
-            "formated_number":"(85) 98127-6518",
-            "whatsapp":"5585981276518"
+            "formated_number":"@projetolizla",
+            "whatsapp":null
+        },
+        {
+            "name":"Nós da linha de frente",
+            "area":"Voluntários",
+            "formated_number":"@nosdalinhadefrente",
+            "whatsapp":null
         },
         {
             "name":"Mayra",
