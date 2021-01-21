@@ -18,5 +18,6 @@ server
     .get('/', pages.index)
     .get('/local', pages.local)
     .get('/locais', pages.locals)
+    .get('/profissionais_saude', pages.medics)
 
 server.listen(process.env.PORT || 5500)

@@ -30,24 +30,7 @@ span.onclick = function () {
     modal.style.display = "none";
 }
 
-
-var modalMedico = document.getElementById("infoMedicos");
-var btnMedico = document.getElementById("medicosBtn");
-
-var spanMedico = document.getElementsByClassName("close")[1];
-
-btnMedico.onclick = function () {
-    modalMedico.style.display = "block";
-}
-
-spanMedico.onclick = function () {
-    modalMedico.style.display = "none";
-}
-
 window.onclick = function (event) {
-    if (event.target == modalMedico) {
-        modalMedico.style.display = "none";
-    }
     if (event.target == modal) {
         modal.style.display = "none";
     }
