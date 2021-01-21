@@ -37,6 +37,7 @@
                     <td data-label="Nome">{{this.name}}</td>
                     <td data-label="Atuação">{{this.area}}</td>
                     <td data-label="Contato">
+                        {{#if this.whatsapp}}
                         <a style="text-decoration: none;"
                             href="https://api.whatsapp.com/send?l=pt_BR&phone={{this.whatsapp}}&text=Oi, {{this.name}}"
                             target="_blank" class="primary-button" type="button">
@@ -44,6 +45,9 @@
                                 src="/images/whatsapp.svg" alt="Chamar no whatsapp" />
                             {{this.formated_number}}
                         </a>
+                        {{else}}
+                        {{this.formated_number}}
+                        {{/if}}
                     </td>
                 </tr>
                 {{/each}}
