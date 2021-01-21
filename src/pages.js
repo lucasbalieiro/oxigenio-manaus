@@ -1,4 +1,5 @@
 const Database = require("./database/db");
+const MedicsDatabase = require("./database/medics")
 
 module.exports = {
   index(req, res) {
@@ -33,5 +34,21 @@ module.exports = {
       console.log(error);
       return res.send("Erro no banco de dados!");
     }
-  }
+  },
+
+  async medics(req, res) {
+
+    try {
+      const medics = MedicsDatabase
+        .get('medicos')
+        .value()
+
+      return res.render("medics", { medics });
+
+    } catch (error) {
+      console.log(error);
+      return res.send("Erro no banco de dados!");
+    }
+  },
+
 };

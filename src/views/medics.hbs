@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Site para acompanhar fornecedores que ainda possuem capacidade de abastecimento e venda de cilindros de oxigênio">
+    <title>Oxigênio Manaus</title>
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/modal.css" />
+    <link rel="stylesheet" href="/css/animations.css" />
+    <link rel="stylesheet" href="/css/page-medics.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="medics-list">
+        <table>
+            <caption>Profissionais de saúde</caption>
+            <caption class="small">Todos os listados abaixo foram contactados diretamente por mim e se disponibilizaram
+                para
+                o serviço</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Atuação</th>
+                    <th scope="col">Contato</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each medics}}
+                <tr>
+                    <td data-label="Nome">{{this.name}}</td>
+                    <td data-label="Atuação">{{this.area}}</td>
+                    <td data-label="Contato">
+                        <a style="text-decoration: none;"
+                            href="https://api.whatsapp.com/send?l=pt_BR&phone={{this.whatsapp}}&text=Oi, {{this.name}}"
+                            target="_blank" class="primary-button" type="button">
+                            <img width="20px" height="20px" style="background-color: #3cdc8c;"
+                                src="/images/whatsapp.svg" alt="Chamar no whatsapp" />
+                            {{this.formated_number}}
+                        </a>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+    {{>navbar}}
+    {{>info}}
+
+    <script src="/scripts/global.js"></script>
+</body>
+
+</html>
