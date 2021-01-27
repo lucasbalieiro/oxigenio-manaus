@@ -46,6 +46,9 @@
           <h2>Instruções</h2>
 
           <p>{{local.instructions}}
+            {{#if local.link}}
+            {{>links local.link}}
+            {{/if}}
           </p>
           {{#if local.whatsapp}}
           <a href="https://api.whatsapp.com/send?l=pt_BR&phone={{local.whatsapp}}&text=Oi, {{local.name}}"
