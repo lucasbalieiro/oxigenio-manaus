@@ -7,12 +7,14 @@
             "lng": "-59.9096087",
             "name": "Carboxi Gases",
             "description": "A empresa está funcionando apenas para reabastecimento; Preços: R$ 600,00 para cilindros grandes; R$ 400,00 para Cilindros pequenos",
-            "last_update":"26/01/2020 13:09",
-            "address":"Rua Desembargador Cesar do Rego, 897 - Colônia Antonio Aleixo - Manaus/AM",
+            "last_update": "27/01/2020 19:09",
+            "address": "Rua Desembargador Cesar do Rego, 897 - Colônia Antonio Aleixo - Manaus/AM",
             "instructions": "Deve-se apresentar documento que comprove a situação do doente; apenas 1 unidade por pessoa; Pgamentos em espécie ou PIX",
             "opening_hours": "-",
-            "whatsapp":null,
-            "cel_formated":["(92) 3618-9394"]
+            "whatsapp": null,
+            "cel_formated": [
+                "(92) 3618-9394"
+            ]
         },
         {
             "id": 2,
@@ -21,12 +23,14 @@
             "lng": "-60.0478753",
             "name": "Nitron da Amazônia",
             "description": "No momento não possui cilindro para venda, apenas reabastecimento",
-            "last_update":"16/01/2020 11:00",
-            "address":"Av contorno norte sul 1513 (9,62 km) 69073-000 Manaus, AM",
+            "last_update": "16/01/2020 11:00",
+            "address": "Av contorno norte sul 1513 (9,62 km) 69073-000 Manaus, AM",
             "instructions": "A partir da 11 horas a empresa receberá apenas Cilindros grandes, com receituário médico e 1 unidade por pessoa",
             "opening_hours": "08:00 às 17:30",
-            "whatsapp":null,
-            "cel_formated":["(92) 3615-2299"]
+            "whatsapp": null,
+            "cel_formated": [
+                "(92) 3615-2299"
+            ]
         },
         {
             "id": 3,
@@ -35,12 +39,14 @@
             "lng": "-60.017606",
             "name": "Nogueira e Menezes LTDA",
             "description": "Venda de Material para acoplar ao cilindro. Estoque hoje está esgotado, previsão de chegada entre 19 e 20 de janeiro",
-            "last_update":"16/01/2020 18:54",
-            "address":"Endereço de entrega pode variar, realize todos os tramites via ligação",
+            "last_update": "16/01/2020 18:54",
+            "address": "Endereço de entrega pode variar, realize todos os tramites via ligação",
             "instructions": "O atendimento é todo via telefone, após acertarem os trâmites, eles enviam a localização",
             "opening_hours": "08:00 às 17:30",
-            "whatsapp":"5592988162656",
-            "cel_formated":["(92) 9816-2656"]
+            "whatsapp": "5592988162656",
+            "cel_formated": [
+                "(92) 9816-2656"
+            ]
         },
         {
             "id": 4,
@@ -48,30 +54,35 @@
             "lat": "-3.1464028",
             "lng": "-60.0082789",
             "name": "Operação da Casa Civil",
-            "last_update":"16/01/2020 23:00",
+            "last_update": "16/01/2020 23:00",
             "description": "Casa Civil recolhendo cilindros no SPA Zona Sul para abastecimento gratuito em Bélem. A previsão de retorno com os cilindros cheios é as 06h",
-            "address":"SPA - Zona Sul - R. José Bento, 33 - Colônia Oliveira Machado",
+            "address": "SPA - Zona Sul - R. José Bento, 33 - Colônia Oliveira Machado",
             "instructions": "Levar seus cilindros identificados e anotem o numero de série",
             "opening_hours": "até 01:30",
-            "whatsapp":null,
-            "cel_formated":[""]
+            "whatsapp": null,
+            "cel_formated": [
+                ""
+            ]
         },
         {
             "id": 5,
-            "enabled": false,
+            "enabled": true,
             "lat": "-3.098257",
             "lng": "-60.026689",
-            "name": "Respira Amazonas - Parceria Bemol",
-            "last_update":"19/01/2020 15:50",
-            "description": "Estão distribuindo gratuitamente, em parceria com a Bemol, basta fazer contato com eles para entrar na lista; Quando estiver pronto eles fazem a entrega;",
-            "address":"Eles fazem a entrega, não precisa ir ao local",
-            "images": [
-                "http://www.picinguaba.eco.br/images/joomlart/demo/default.jpg"
-            ],
-            "instructions": "Entre em contato com ele e informe: Nome do Paciente, Responsável, Contato, Local de Entrega, Informar se tem cilindro",
-            "opening_hours": "Depende da demanda",
-            "whatsapp":5592982286779,
-            "cel_formated":["(92) 98228-6779","(92) 99132-5550"]
+            "name": "Respira Amazonas",
+            "last_update": "27/01/2020 09:19",
+            "description": "Estão atendendo de forma gratuita, porém, é necessário cadastro via formulário; Eles analisarão a requisição e entregarão o oxigênio, se possível",
+            "address": "Eles fazem a entrega, não precisa ir ao local",
+            "instructions": "Preencha as informações clicando neste link: ",
+            "link": {
+                "url": "https://forms.gle/vGbsTdUGcicm2mut8",
+                "url_title": "Formulário Respira Amazonas"
+            },
+            "opening_hours": "-",
+            "whatsapp": null,
+            "cel_formated": [
+                ""
+            ]
         },
         {
             "id": 6,
@@ -79,13 +90,15 @@
             "lat": "-3.100294",
             "lng": "-60.024017",
             "name": "Kit para Cilindro",
-            "last_update":"26/01/2020 13:06",
+            "last_update": "27/01/2020 19:06",
             "description": "Não fazem recarga, apenas vendem o kit para o cilindro",
-            "address":"Verificar no numero de contato",
+            "address": "Verificar no numero de contato",
             "instructions": "-",
             "opening_hours": "07:00 às 17:00",
             "whatsapp": 5592984127278,
-            "cel_formated":["(92) 98412-7278"]
+            "cel_formated": [
+                "(92) 98412-7278"
+            ]
         }
     ]
 }
